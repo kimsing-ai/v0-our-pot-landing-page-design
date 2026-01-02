@@ -27,7 +27,12 @@ export default function LandingPage() {
             <Link href="/privacy" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
               Privacy
             </Link>
-            <Button size="sm">Get Started</Button>
+            <Button
+              size="sm"
+              className="shadow-lg shadow-primary/20 hover:shadow-xl hover:shadow-primary/30 hover:scale-105 transition-all duration-300"
+            >
+              Get Started
+            </Button>
           </nav>
         </div>
       </header>
@@ -57,11 +62,18 @@ export default function LandingPage() {
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button size="lg" className="text-lg px-8">
+                <Button
+                  size="lg"
+                  className="text-lg px-8 shadow-2xl shadow-primary/30 hover:shadow-primary/50 hover:scale-105 active:scale-100 transition-all duration-300 group"
+                >
                   Download Now
-                  <ArrowRight className="ml-2 h-5 w-5" />
+                  <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
                 </Button>
-                <Button size="lg" variant="outline" className="text-lg px-8 bg-transparent">
+                <Button
+                  size="lg"
+                  variant="outline"
+                  className="text-lg px-8 bg-transparent hover:bg-primary/5 hover:border-primary hover:scale-105 active:scale-100 transition-all duration-300 group"
+                >
                   Learn More
                 </Button>
               </div>
@@ -80,7 +92,7 @@ export default function LandingPage() {
             </div>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
-              <Card className="p-8 border-2 hover:border-primary/50 transition-colors">
+              <Card className="p-8 border-2 hover:border-primary/50 hover:shadow-xl hover:shadow-primary/10 hover:-translate-y-2 transition-all duration-300 cursor-pointer">
                 <div className="h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
                   <Users className="h-6 w-6 text-primary" />
                 </div>
@@ -90,7 +102,7 @@ export default function LandingPage() {
                 </p>
               </Card>
 
-              <Card className="p-8 border-2 hover:border-primary/50 transition-colors">
+              <Card className="p-8 border-2 hover:border-primary/50 hover:shadow-xl hover:shadow-primary/10 hover:-translate-y-2 transition-all duration-300 cursor-pointer">
                 <div className="h-12 w-12 rounded-lg bg-secondary/10 flex items-center justify-center mb-4">
                   <Receipt className="h-6 w-6 text-secondary" />
                 </div>
@@ -98,7 +110,7 @@ export default function LandingPage() {
                 <p className="text-muted-foreground">Snap a photo and let AI automatically extract items and amounts</p>
               </Card>
 
-              <Card className="p-8 border-2 hover:border-primary/50 transition-colors">
+              <Card className="p-8 border-2 hover:border-primary/50 hover:shadow-xl hover:shadow-primary/10 hover:-translate-y-2 transition-all duration-300 cursor-pointer">
                 <div className="h-12 w-12 rounded-lg bg-accent/10 flex items-center justify-center mb-4">
                   <PieChart className="h-6 w-6 text-accent" />
                 </div>
@@ -108,7 +120,7 @@ export default function LandingPage() {
                 </p>
               </Card>
 
-              <Card className="p-8 border-2 hover:border-primary/50 transition-colors">
+              <Card className="p-8 border-2 hover:border-primary/50 hover:shadow-xl hover:shadow-primary/10 hover:-translate-y-2 transition-all duration-300 cursor-pointer">
                 <div className="h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
                   <Smartphone className="h-6 w-6 text-primary" />
                 </div>
@@ -118,7 +130,7 @@ export default function LandingPage() {
                 </p>
               </Card>
 
-              <Card className="p-8 border-2 hover:border-primary/50 transition-colors">
+              <Card className="p-8 border-2 hover:border-primary/50 hover:shadow-xl hover:shadow-primary/10 hover:-translate-y-2 transition-all duration-300 cursor-pointer">
                 <div className="h-12 w-12 rounded-lg bg-secondary/10 flex items-center justify-center mb-4">
                   <Receipt className="h-6 w-6 text-secondary" />
                 </div>
@@ -126,7 +138,7 @@ export default function LandingPage() {
                 <p className="text-muted-foreground">Mark payments complete and keep a history of all transactions</p>
               </Card>
 
-              <Card className="p-8 border-2 hover:border-primary/50 transition-colors">
+              <Card className="p-8 border-2 hover:border-primary/50 hover:shadow-xl hover:shadow-primary/10 hover:-translate-y-2 transition-all duration-300 cursor-pointer">
                 <div className="h-12 w-12 rounded-lg bg-accent/10 flex items-center justify-center mb-4">
                   <Users className="h-6 w-6 text-accent" />
                 </div>
@@ -148,8 +160,8 @@ export default function LandingPage() {
             </div>
 
             <div className="max-w-4xl mx-auto grid md:grid-cols-3 gap-8">
-              <div className="text-center">
-                <div className="h-16 w-16 rounded-full bg-primary text-primary-foreground flex items-center justify-center text-2xl font-bold mx-auto mb-4">
+              <div className="text-center group">
+                <div className="h-16 w-16 rounded-full bg-primary text-primary-foreground flex items-center justify-center text-2xl font-bold mx-auto mb-4 group-hover:scale-110 group-hover:shadow-lg group-hover:shadow-primary/30 transition-all duration-300">
                   1
                 </div>
                 <h3 className="text-xl font-semibold mb-2">Create a Group</h3>
@@ -158,16 +170,16 @@ export default function LandingPage() {
                 </p>
               </div>
 
-              <div className="text-center">
-                <div className="h-16 w-16 rounded-full bg-secondary text-secondary-foreground flex items-center justify-center text-2xl font-bold mx-auto mb-4">
+              <div className="text-center group">
+                <div className="h-16 w-16 rounded-full bg-secondary text-secondary-foreground flex items-center justify-center text-2xl font-bold mx-auto mb-4 group-hover:scale-110 group-hover:shadow-lg group-hover:shadow-secondary/30 transition-all duration-300">
                   2
                 </div>
                 <h3 className="text-xl font-semibold mb-2">Add Expenses</h3>
                 <p className="text-muted-foreground">Scan receipts or manually enter shared costs as they happen</p>
               </div>
 
-              <div className="text-center">
-                <div className="h-16 w-16 rounded-full bg-accent text-accent-foreground flex items-center justify-center text-2xl font-bold mx-auto mb-4">
+              <div className="text-center group">
+                <div className="h-16 w-16 rounded-full bg-accent text-accent-foreground flex items-center justify-center text-2xl font-bold mx-auto mb-4 group-hover:scale-110 group-hover:shadow-lg group-hover:shadow-accent/30 transition-all duration-300">
                   3
                 </div>
                 <h3 className="text-xl font-semibold mb-2">Settle Up</h3>
@@ -180,16 +192,20 @@ export default function LandingPage() {
         {/* CTA Section */}
         <section className="py-20 md:py-32">
           <div className="container mx-auto px-4">
-            <Card className="max-w-4xl mx-auto p-12 text-center bg-primary text-primary-foreground border-0">
+            <Card className="max-w-4xl mx-auto p-12 text-center bg-primary text-primary-foreground border-0 shadow-2xl shadow-primary/20 hover:shadow-primary/30 transition-shadow duration-300">
               <h2 className="text-4xl md:text-5xl font-bold mb-6 text-balance">
                 Ready to simplify your shared expenses?
               </h2>
               <p className="text-xl mb-8 text-primary-foreground/90 text-pretty">
                 Join thousands of groups already using our-pot to manage their money together
               </p>
-              <Button size="lg" variant="secondary" className="text-lg px-8">
+              <Button
+                size="lg"
+                variant="secondary"
+                className="text-lg px-8 shadow-xl hover:shadow-2xl hover:scale-110 active:scale-105 transition-all duration-300 group"
+              >
                 Get Started Free
-                <ArrowRight className="ml-2 h-5 w-5" />
+                <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
               </Button>
             </Card>
           </div>
